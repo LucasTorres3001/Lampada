@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    
+    <body>
+        <header>
+            <h1>Lâmpada</h1>
+        </header>
+        <section>
+            <form action="Dados" method="POST" name="Formulary" id="Formulario">
+                <fieldset>
+                    <legend>Descrição da Lâmpada</legend>
+                    <p>
+                        <label for="Color">Cor:</label>
+                        <input type="text" name="cor1" id="Color" size="10" maxlength="10" placeholder="Cor" required="">
+                    
+                        <label for="caracteristicas">Caractéristicas Técnicas:</label>
+                        <input type="text" name="carac_tec" id="caracteristicas" size="30" maxlength="45" placeholder="caracteristicas técnicas" required="">
+                    
+                        <label for="Beneficios">Beneficios:</label>
+                        <input type="text" name="beneficios" id="Beneficios" size="30" maxlength="50" placeholder="Beneficios" required="">
+                    </p>
+                    <p>
+                        <label for="Codigo">Código do Fornecedor:</label>
+                        <input type="text" name="cod_fornecedor" id="Codigo" size="15" maxlength="12" placeholder="Código do Fornecedor" required="">
+                    
+                        <label for="CodBarras">Código de Barras:</label>
+                        <input type="text" name="cod_barras" id="CodBarras" size="15" maxlength="13" placeholder="Código de Barras" required="">
+                    </p>
+                    <p>
+                        <label for="Volt">Voltagem</label>
+                        <input type="text" name="voltagem" id="Volt" size="3" maxlength="3" placeholder="V" required="">
+                        V
+                    </p>
+                    <p>
+                        <label for="PotI">Potência:</label>
+                        <input type="text" name="potenciaI" id="PotI" size="3" maxlength="3" required="">
+                        W á
+                        <input type="text" name="potenciaII" id="PotII" size="3" maxlength="3" required="">
+                        W
+                    </p>
+                    <p>
+                        <label for="Format">Formato:</label>
+                        <input type="text" name="formato" id="Format" size="16" maxlength="25" placeholder="Formato" required="">
+                    
+                        <label for="Type">Tipo de soquete:</label>
+                        <input type="text" name="tipo_soquete" id="Type" size="14" maxlength="20" placeholder="Tipo" required="">
+                    
+                        <label for="Color2">Cor:</label>
+                        <input type="text" name="cor2" id="Color2" size="12" maxlength="14" placeholder="Cor" required="">
+                    
+                        <label for="Reator">Reator:</label>
+                        <input type="text" name="reator" id="Reator" size="3" maxlength="3" placeholder="S/N" required="">
+                    
+                        <label for="Uso">Ambiente de Uso:</label>
+                        <input type="text" name="amb_uso" id="Uso" size="8" maxlength="7" required="">
+                        
+                        <label for="F_lampada">Formato da lâmpada:</label>
+                        <input type="text" name="formato_lampada" id="F_lampada" size="8" maxlength="7" required="">
+                        
+                        <label for="Color_luz">Cor da luz:</label>
+                        <input type="text" name="cor_luz" id="Color_luz" size="10" maxlength="14" placeholder="Cor da luz" required="">
+                    </p>
+                    <p>
+                        <label for="Pot_lampada">Potência da lâmpada:</label>
+                        <input type="text" name="potencia_lampada" id="Pot_lampada" size="3" maxlength="3" required="">
+                        W
+                    </p>
+                    <p>
+                        <label for="Qnt_luz">Quanto Ilumina:</label>
+                        <input type="text" name="qnt_ilumina" id="Qnt_luz" size="6" maxlength="5" required="">
+                        lm
+                    </p>
+                    <p>
+                        <label for="Tensao_lampada">Tensão da lâmpada:</label>
+                        <input type="text" name="tensao" id="Tensao_lampada" size="3" maxlength="3" placeholder="V" required="">
+                        V
+                    </p>
+                </fieldset>
+                <fieldset>
+                    <legend>Dimensões</legend>
+                    <p>
+                        <label for="h">Altura:</label>
+                        <input type="text" name="altura" id="h" size="5" maxlength="5" placeholder="cm" required="">
+                        cm
+                    </p>
+                    <p>
+                        <label for="leng">Comprimento:</label>
+                        <input type="text" name="comprimento" id="leng" size="5" maxlength="5" placeholder="cm" required="">
+                        cm
+                    </p>
+                    <p>
+                        <label for="Largura">Largura:</label>
+                        <input type="text" name="largura" id="Largura" size="5" maxlength="5" placeholder="cm" required="">
+                        cm
+                    </p>
+                    <p>
+                        <label for="peso">Peso:</label>
+                        <input type="text" name="massa" id="peso" size="5" maxlength="5" placeholder="g" required="">
+                        g
+                    </p>
+                </fieldset>
+                <br/>
+                <input type="submit" name="enviar" id="Button" value="Enviar">
+            </form>
+        </section>
+    </body>
+</html>
