@@ -45,33 +45,14 @@ public class Dados extends HttpServlet {
         Largura_txt = request.getParameter("largura");
         Massa_txt = request.getParameter("massa");
         
-        int Massa,P1,P2,P3,QntdDeLuz,U,Volt;
-        float Altura,Comprimento,Largura;
-        long CodigoFornecedor,CodigoBarras;
-        
-        Massa = Integer.parseInt(Massa_txt);
-        P1 = Integer.parseInt(PotenciaI_txt);
-        P2 = Integer.parseInt(PotenciaII_txt);
-        P3 = Integer.parseInt(PotenciaLampada_txt);
-        QntdDeLuz = Integer.parseInt(QntIlumina_txt);
-        U = Integer.parseInt(Tensao_txt);
-        Volt = Integer.parseInt(Voltagem_txt);
-        
-        Altura = Float.parseFloat(Altura_txt);
-        Comprimento = Float.parseFloat(Comprimento_txt);
-        Largura = Float.parseFloat(Largura_txt);
-        
-        CodigoFornecedor = Long.parseLong(CodFornecedor_txt);
-        CodigoBarras = Long.parseLong(CodBarras_txt);
-        
         request.setAttribute("PrimeiraCor_txt", CorI_txt);
         request.setAttribute("CaracTec_txt", CaracTec_txt);
         request.setAttribute("Beneficios_txt", Beneficios_txt);
-        request.setAttribute("CodigoFornecedor", CodigoFornecedor);
-        request.setAttribute("CodigoBarras", CodigoBarras);
-        request.setAttribute("Volt_txt", Volt);
-        request.setAttribute("P1", P1);
-        request.setAttribute("P2", P2);
+        request.setAttribute("CodigoFornecedor", CodFornecedor_txt);
+        request.setAttribute("CodigoBarras", CodBarras_txt);
+        request.setAttribute("Volt_txt", Voltagem_txt);
+        request.setAttribute("P1", PotenciaI_txt);
+        request.setAttribute("P2", PotenciaII_txt);
         request.setAttribute("Formato_txt", Formato_txt);
         request.setAttribute("TipoSoquete_txt", TipoSoquete_txt);
         request.setAttribute("SegundaCor_txt", CorII_txt);
@@ -79,13 +60,13 @@ public class Dados extends HttpServlet {
         request.setAttribute("AmbUso_txt", AmbUso_txt);
         request.setAttribute("FormatoLampada_txt", FormatoLampada_txt);
         request.setAttribute("CorLuz_txt", CorLuz_txt);
-        request.setAttribute("P3", P3);
-        request.setAttribute("QntdDeLuz", QntdDeLuz);
-        request.setAttribute("U", U);
-        request.setAttribute("Altura", Altura);
-        request.setAttribute("Comprimento", Comprimento);
-        request.setAttribute("Largura", Largura);
-        request.setAttribute("Massa", Massa);
+        request.setAttribute("P3", PotenciaLampada_txt);
+        request.setAttribute("QntdDeLuz", QntIlumina_txt);
+        request.setAttribute("U", Tensao_txt);
+        request.setAttribute("Altura", Altura_txt);
+        request.setAttribute("Comprimento", Comprimento_txt);
+        request.setAttribute("Largura", Largura_txt);
+        request.setAttribute("Massa", Massa_txt);
         
         request.getRequestDispatcher("other.jsp").forward(request, response);
     }
